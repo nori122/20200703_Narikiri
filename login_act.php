@@ -41,6 +41,6 @@ if (!$val) {
   $_SESSION["is_admin"] = $val["is_admin"];
   $_SESSION["user_id"] = $val["user_id"];
   $_SESSION["id"] = $val["id"];
-  header("Location:Timeline.php");
+  header("Location:timeline.php");
   exit();
 }
