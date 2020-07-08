@@ -11,27 +11,23 @@ HTML 要素
         integrity='sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V' crossorigin='anonymous'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-    <title>Narikiri_Edit</title>
+    <title>Narikiri_login</title>
 </head>
 
 <body>
-    <legend>なりきりプロフィール編集</legend>
-    <form action="update.php" method="POST">
-
+    <legend>なりきりログイン画面</legend>
+    <img src='asset/アイコン集/ひよこのシルエットアイコン.png' alt='' style="width:30px; height:30px;">
+    <form action="login_act.php" method="POST">
         <div>
-            <input type="file">
-        </div>
-
-        <div>
-            <span>User ID</span>
+            <input type="text" name="user_id" placeholder="User ID">
         </div>
         <div>
-            <input type="text" name="user_name" placeholder="User Name">
+            <input type="password" name="password" placeholder="Password">
         </div>
-
         <div>
-            <button>Save</button>
+            <button>Login</button>
         </div>
+        <a href="register.php">register</a>
 
 
 </body>
