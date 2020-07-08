@@ -2,7 +2,7 @@
 php 要素
 --------------------->
 <?PHP
-echo ('test');
+header('Location: login.php');
 
 
 ?>
