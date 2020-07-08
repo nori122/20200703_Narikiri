@@ -16,7 +16,7 @@ $stmt->bindValue(':user_id', $user_id, PDO::PARAM_INT);
 $stmt->bindValue(':like_id', $like_id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
-if ($status == false){
+if ($status == false) {
   $error = $stmt->errorInfo();
   echo json_encode(["error_msg" => "{$error[2]}"]);
 } else {
@@ -26,10 +26,10 @@ if ($status == false){
 
 if ($like_count[0] != 0) {
   //既にいいねされてる場合、$sqlをここで上書きして、DELETEする
-$sql ='DELETE FROM like_table WHERE user_id=:user_id AND like_id=:like_id';
+  $sql = 'DELETE FROM like_table WHERE user_id=:user_id AND like_id=:like_id';
   //いいねされていない場合、$sqlをここで上書きして、INSERT(追加)でテーブルを追加する
 } else {
-$sql = 'INSERT INTO like_table(id, user_id, like_id) VALUES(NULL, :user_id, :like_id)'; // 1行で記述！ 
+  $sql = 'INSERT INTO like_table(id, user_id, like_id) VALUES(NULL, :user_id, :like_id)'; // 1行で記述！ 
 }
 
 $stmt = $pdo->prepare($sql);
@@ -41,5 +41,5 @@ if ($status == false) {
   $error = $stmt->errorInfo();
   echo json_encode(["error_msg" => "{$error[2]}"]);
 } else {
-  header('Location:Timeline.php');
+  header('Location:timeline.php');
 }

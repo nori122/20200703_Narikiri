@@ -11,7 +11,7 @@ HTML 要素
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.13.0/css/all.css' integrity='sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V' crossorigin='anonymous'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-    <title>Narikiri_Register</title>
+    <title>Narikiri_register</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@ HTML 要素
         </div>
 
         <div>
-            <button>Register</button>
+            <button>register</button>
         </div>
         <a href="login.php">Login</a>
 

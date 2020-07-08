@@ -59,7 +59,7 @@ if ($status == false) {
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);  // データの出力用変数（初期値は空文字）を設定
     $output = "";
     foreach ($result as $record) {
-    $output .= "{$record["fake_id"]}";
+        $output .= "{$record["fake_id"]}";
     }
     // $valueの参照を解除する．解除しないと，再度foreachした場合に最初からループしない
     // 今回は以降foreachしないので影響なし
@@ -223,7 +223,7 @@ HTML 要素
         <header>
             <img src='asset/アイコン集/ひよこのシルエットアイコン.png' alt='' style="width:30px; height:30px;">
             <button>Tweet</button>
-            <a href="Timeline.php">ホーム画面</a>
+            <a href="timeline.php">ホーム画面</a>
             <a href="pretend.php">なりきり一覧</a>
             <a href="todo_logout.php">ログアウト</a>
         </header>
@@ -238,7 +238,7 @@ HTML 要素
             <?= $picture_output5 ?>
             <a href='pretend.html'><img src='asset/アイコン集/三点リーダーアイコン1.png' alt='' style="width:30px; height:30px;"></a>
         </div>
-            <!-- なりすました人のID  hiddenで非表示にする予定。 -->
+        <!-- なりすました人のID  hiddenで非表示にする予定。 -->
         <div>
             なりきりID: <input type="text" name="fake_id" id="fake_id" value="<?php echo $output ?>">
         </div>

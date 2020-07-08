@@ -77,12 +77,12 @@ HTML 要素
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>Narikiri_Edit</title>
+    <title>Narikiri_edit</title>
 </head>
 
 <body>
     <legend>なりきりプロフィール編集</legend>
-    <a href="Timeline.php">ホーム画面</a>
+    <a href="timeline.php">ホーム画面</a>
     <form action="update.php" method="POST" enctype="multipart/form-data">
 
         <div>

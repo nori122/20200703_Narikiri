@@ -30,7 +30,6 @@ if (isset($_FILES['upfile']) && $_FILES['upfile']['error'] == 0) {
   $extension = pathinfo($uploadedFileName, PATHINFO_EXTENSION);
   $uniqueName = date('YmdHis') . md5(session_id()) . "." . $extension;
   $fileNameToSave = $fileDirectoryPath . $uniqueName;
-
 }
 
 
@@ -64,6 +63,6 @@ if ($status == false) {
   exit();
 } else {
   // 正常にSQLが実行された場合は一覧ページファイルに移動し，一覧ページの処理を実行する
-  header("Location:Timeline.php");
+  header("Location:timeline.php");
   exit();
 }

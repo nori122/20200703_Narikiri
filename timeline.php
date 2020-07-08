@@ -56,7 +56,7 @@ if ($status == false) {
 $sql = 'SELECT * FROM tweet_table LEFT OUTER JOIN(SELECT like_id, COUNT(id) AS cnt FROM like_table GROUP BY like_id) AS likes ON tweet_table.id = likes.like_id WHERE NOT real_id = 0';
 // ※WHERE NOT real_id = 0 をつける理由
 //   なり変わり一覧(pretend.php)からツイート画面(tweet.php)にfake_idを飛ばす時fake_id以外の値は0を入れている。
-//   Timelineページにもその値が表示されてしまうのを防ぐ為にWHERE NOT real_id = 0で非表示にする。
+//   timelineページにもその値が表示されてしまうのを防ぐ為にWHERE NOT real_id = 0で非表示にする。
 
 // SQL準備&実行
 $stmt = $pdo->prepare($sql);
@@ -109,7 +109,7 @@ HTML 要素
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>Narikiri_Timeline</title>
+    <title>Narikiri_timeline</title>
 </head>
 
 <body>
@@ -132,7 +132,7 @@ HTML 要素
             <fieldset>
                 <legend>ホーム画面</legend>
                 <a href="tweet.php">ツイート画面</a>
-                <a href="Edit.php">プロフィール画面</a>
+                <a href="edit.php">プロフィール画面</a>
                 <a href="todo_logout.php">logout</a>
                 <table>
                     <thead>
