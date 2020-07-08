@@ -3,6 +3,7 @@ HTML 要素
 --------------------->
 <!DOCTYPE html>
 <html lang='ja'>
+<!-- ファイル名変更 -->
 
 <head>
     <meta charset='UTF-8'>

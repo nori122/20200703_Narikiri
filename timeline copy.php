@@ -1,4 +1,6 @@
 <?php
+//ファイル名変更
+
 session_start();
 include("functions.php");
 check_session_id();
