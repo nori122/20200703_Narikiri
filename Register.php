@@ -14,7 +14,7 @@ HTML 要素
 </head>
 
 <body>
-    <legend>なりきり新規登録</legend>
+    <legend>なりきり 新規登録</legend>
     <img src='asset/アイコン集/ひよこのシルエットアイコン.png' alt='' style="width:30px; height:30px;">
     <form action="register_act.php" method="POST">
         <div>

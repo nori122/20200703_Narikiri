@@ -1,7 +1,7 @@
 <?php
 
 // var_dump($_POST);
-// exit();
+// exit(); 
 
 // 関数ファイル読み込み
 include('functions.php');
